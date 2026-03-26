@@ -39,7 +39,7 @@ h1, h2, h3, .logo {
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.88)),
     radial-gradient(circle at top, rgba(130, 0, 0, 0.18), transparent 35%),
-    url("images/forest-bg.jpg") center/cover no-repeat;
+    url("forest-bg.jpg") center/cover no-repeat;
 }
 
 .container {
