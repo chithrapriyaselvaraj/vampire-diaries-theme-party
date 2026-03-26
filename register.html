@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Blood Moon Night</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-register">
+  <div class="bg-overlay"></div>
+  <div class="magic-particles"></div>
+  <div class="blood-float">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span>
+  </div>
+  <div class="mist mist-one"></div>
+  <div class="mist mist-two"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">🩸 Blood Moon Night</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="register.html">Register</a></li>
+        <li><a href="outfits.html">Outfit Ideas</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-blood">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="sub-hero">
+      <div class="moon-glow"></div>
+
+      <div class="container">
+        <p class="eyebrow">ENTRY TICKET REGISTRATION</p>
+        <h1>Reserve Your Place</h1>
+        <p class="hero-text narrow">
+          Register for the LBTITW Vampire Diaries 80’s Blood Moon Night and choose
+          the character or creature vibe that matches your outfit.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="form-wrapper">
+        <div class="form-info glass-card">
+          <h2>Before you enter the night…</h2>
+          <p>
+            This event is exclusively for LBTITW students. Bring your student ID
+            and choose whether your look is inspired by a vampire, werewolf, witch,
+            or Mystic Falls character.
+          </p>
+
+          <div class="info-list">
+            <div class="info-pill">Exclusive student entry</div>
+            <div class="info-pill">TVD 80’s outfit theme</div>
+            <div class="info-pill">Vampire • Werewolf • Witch</div>
+          </div>
+        </div>
+
+        <form id="registrationForm" class="register-form glass-card">
+          <h2>Registration Form</h2>
+
+          <div class="field-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="field-group">
+            <label for="department">Department</label>
+            <input type="text" id="department" required />
+          </div>
+
+          <div class="field-group">
+            <label for="semester">Semester / Year</label>
+            <input type="text" id="semester" required />
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="field-group">
+            <label for="character">Character Inspiration</label>
+            <select id="character" required>
+              <option value="">Select character</option>
+              <option>Katherine Pierce</option>
+              <option>Stefan Salvatore</option>
+              <option>Damon Salvatore</option>
+              <option>Elena Gilbert</option>
+              <option>Caroline Forbes</option>
+              <option>Bonnie Bennett</option>
+              <option>Klaus Mikaelson</option>
+              <option>Tyler Lockwood</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="creature">Theme Type</label>
+            <select id="creature" required>
+              <option value="">Select one</option>
+              <option>Vampire</option>
+              <option>Werewolf</option>
+              <option>Witch</option>
+              <option>Mystic Falls Human</option>
+              <option>Hybrid</option>
+            </select>
+          </div>
+
+          <div class="field-group full">
+            <label for="notes">Outfit Idea / Notes</label>
+            <textarea id="notes" rows="4" placeholder="Ex: Katherine-inspired red ballgown with dramatic curls"></textarea>
+          </div>
+
+          <div class="field-group full">
+            <button type="submit" class="btn btn-primary full-btn">Confirm Registration</button>
+          </div>
+
+          <p id="successMessage" class="success-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>LBTITW Blood Moon Night • Registration Page</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
